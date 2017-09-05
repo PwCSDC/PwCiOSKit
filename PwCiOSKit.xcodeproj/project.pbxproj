@@ -10,6 +10,7 @@
 		507BEE211F5E8AD700C6DD94 /* PwCiOSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507BEE171F5E8AD700C6DD94 /* PwCiOSKit.framework */; };
 		507BEE261F5E8AD700C6DD94 /* PwCiOSKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507BEE251F5E8AD700C6DD94 /* PwCiOSKitTests.swift */; };
 		507BEE281F5E8AD700C6DD94 /* PwCiOSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 507BEE1A1F5E8AD700C6DD94 /* PwCiOSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		507BEE321F5E8B9700C6DD94 /* PwCUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507BEE311F5E8B9700C6DD94 /* PwCUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		507BEE201F5E8AD700C6DD94 /* PwCiOSKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PwCiOSKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		507BEE251F5E8AD700C6DD94 /* PwCiOSKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PwCiOSKitTests.swift; sourceTree = "<group>"; };
 		507BEE271F5E8AD700C6DD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507BEE311F5E8B9700C6DD94 /* PwCUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PwCUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				507BEE1A1F5E8AD700C6DD94 /* PwCiOSKit.h */,
+				507BEE311F5E8B9700C6DD94 /* PwCUtilities.swift */,
 				507BEE1B1F5E8AD700C6DD94 /* Info.plist */,
 			);
 			path = PwCiOSKit;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					507BEE161F5E8AD700C6DD94 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					507BEE1F1F5E8AD700C6DD94 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				507BEE321F5E8B9700C6DD94 /* PwCUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		507BEE2C1F5E8AD700C6DD94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.PwCiOSKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +347,7 @@
 		507BEE2D1F5E8AD700C6DD94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +366,7 @@
 		507BEE2F1F5E8AD700C6DD94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PwCiOSKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.PwCiOSKitTests;
@@ -369,6 +378,7 @@
 		507BEE301F5E8AD700C6DD94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PwCiOSKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.PwCiOSKitTests;
