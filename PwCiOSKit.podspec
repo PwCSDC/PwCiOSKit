@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    DESC
 
-  s.homepage     = "https://github.pwc.com/aaron-hu/PwCiOSKit"
+  s.homepage     = "https://github.com/AaronHu2017/PwCiOSKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.pwc.com/aaron-hu/PwCiOSKit.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/AaronHu2017/PwCiOSKit.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
