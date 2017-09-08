@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 PwC Inc. All rights reserved.
 //
 
-extension NSDictionary {
+extension Dictionary {
     
-    open func toJSONString() -> NSString{
+    public func toJSONString() -> NSString{
         
         let jsonData: Data! = try? JSONSerialization.data(withJSONObject: self, options: [])
         
