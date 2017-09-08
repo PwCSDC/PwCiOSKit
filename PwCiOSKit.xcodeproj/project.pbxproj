@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50023B241F626FC500016721 /* NSDictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50023B231F626FC500016721 /* NSDictionaryExtension.swift */; };
 		507BEE211F5E8AD700C6DD94 /* PwCiOSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507BEE171F5E8AD700C6DD94 /* PwCiOSKit.framework */; };
 		507BEE261F5E8AD700C6DD94 /* PwCiOSKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507BEE251F5E8AD700C6DD94 /* PwCiOSKitTests.swift */; };
 		507BEE281F5E8AD700C6DD94 /* PwCiOSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 507BEE1A1F5E8AD700C6DD94 /* PwCiOSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50023B231F626FC500016721 /* NSDictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionaryExtension.swift; sourceTree = "<group>"; };
 		507BEE171F5E8AD700C6DD94 /* PwCiOSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PwCiOSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		507BEE1A1F5E8AD700C6DD94 /* PwCiOSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PwCiOSKit.h; sourceTree = "<group>"; };
 		507BEE1B1F5E8AD700C6DD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50023B251F626FCF00016721 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50023B231F626FC500016721 /* NSDictionaryExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		507BEE0D1F5E8AD700C6DD94 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		507BEE191F5E8AD700C6DD94 /* PwCiOSKit */ = {
 			isa = PBXGroup;
 			children = (
+				50023B251F626FCF00016721 /* Extensions */,
 				507BEE1A1F5E8AD700C6DD94 /* PwCiOSKit.h */,
 				507BEE311F5E8B9700C6DD94 /* PwCUtilities.swift */,
 				507BEE1B1F5E8AD700C6DD94 /* Info.plist */,
@@ -202,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50023B241F626FC500016721 /* NSDictionaryExtension.swift in Sources */,
 				507BEE321F5E8B9700C6DD94 /* PwCUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
