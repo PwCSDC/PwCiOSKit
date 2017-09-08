@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
   s.source       = { :git => "https://github.com/PwCSDC/PwCiOSKit.git", :tag => s.version }
-
   s.source_files  = "PwCiOSKit", "PwCiOSKit/**/*.{h,m,swift}"
  
 end
