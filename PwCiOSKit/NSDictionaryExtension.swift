@@ -8,7 +8,7 @@
 
 extension NSDictionary {
     
-    func toJSONString() -> NSString{
+    open func toJSONString() -> NSString{
         
         let jsonData: Data! = try? JSONSerialization.data(withJSONObject: self, options: [])
         
