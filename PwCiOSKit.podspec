@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "PwCiOSKit"
-  s.version      = "1.0.1"
+  s.version      = "1.0.0"
   s.summary      = "The PwCiOSKit framework is designated for PwC team internal usage."
   s.homepage     = "https://github.com/PwCSDC/PwCiOSKit"
   s.license      = { :type => "MIT", :file => "LICENSE" }
