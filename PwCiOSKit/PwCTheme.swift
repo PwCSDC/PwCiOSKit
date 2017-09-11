@@ -9,9 +9,9 @@
 import UIKit
 
 /**
- *  1. Try PwCThemeManager.applyTheme(theme: .white), if need to set theme color for the whole application, eg. including the color of leftBarItem, rightBarItem or button title color of UIActionSheet etc. BTW. we could define more colors in PwCTheme
+ *  1. Try PwCThemeManager.applyTheme(theme: .white), if need to set theme color for the whole application, eg. including the color of leftBarItem, rightBarItem or button title color of UIActionSheet etc. BTW. we could define more colors in PwCTheme if needed
  *
- *  2. If need to set white color for navigation bar and status bar, try function setLightContent as below, and make sure the back icon is white and without transparency
+ *  2. Try PwCThemeManager.currentTheme().setLightContent(), if need to set white color for navigation bar and status bar, and make sure the back icon is white and without transparency
  *
  */
 
