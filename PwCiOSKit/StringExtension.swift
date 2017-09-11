@@ -62,5 +62,34 @@ extension String {
         return nsSt.appendingPathComponent(path)
     }
     
+    /**
+     Convert float string to formated string with permillage
+     
+     @param precision: keep digital
+     
+     @return  precision is equal to 3, 100000.3456 -> 100,00.35
+     */
+    public func separateFloatStringWith(precision: Int ) -> String{
+        let formatter = NumberFormatter()
+        let value = (self as NSString).doubleValue
+        var format = NSMutableString(string: "###,##0")
+        if(precision == 0)
+        {
+            formatter.positiveFormat = format as String
+            return formatter.string(from: NSNumber(value: value))!
+            
+        }
+        else
+        {
+            format = NSMutableString(string: "###,##0.")
+            for _ in 1...(precision - 1)
+            {
+                format.appendFormat("0")
+            }
+            formatter.positiveFormat = format as String
+            return formatter.string(from: NSNumber(value: value))!
+        }
+    }
+
 }
 
