@@ -62,5 +62,27 @@ extension String {
         return nsSt.appendingPathComponent(path)
     }
     
+    public func separateFloatStringWith(precision: Int ) -> String{
+        let formatter = NumberFormatter()
+        let value = (self as NSString).doubleValue
+        var format = NSMutableString(string: "###,##0")
+        if(precision == 0)
+        {
+            formatter.positiveFormat = format as String
+            return formatter.string(from: NSNumber(value: value))!
+            
+        }
+        else
+        {
+            format = NSMutableString(string: "###,##0.")
+            for _ in 1...(precision -  1)
+            {
+                format.appendFormat("0")
+            }
+            formatter.positiveFormat = format as String
+            return formatter.string(from: NSNumber(value: value))!
+        }
+    }
+    
 }
 
