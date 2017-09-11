@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		50023B241F626FC500016721 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50023B231F626FC500016721 /* DictionaryExtension.swift */; };
 		50023B271F627F9000016721 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50023B261F627F9000016721 /* StringExtension.swift */; };
+		502697151F6621F000363FC7 /* PwCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502697141F6621F000363FC7 /* PwCTheme.swift */; };
 		507BEE211F5E8AD700C6DD94 /* PwCiOSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507BEE171F5E8AD700C6DD94 /* PwCiOSKit.framework */; };
 		507BEE261F5E8AD700C6DD94 /* PwCiOSKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507BEE251F5E8AD700C6DD94 /* PwCiOSKitTests.swift */; };
 		507BEE281F5E8AD700C6DD94 /* PwCiOSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 507BEE1A1F5E8AD700C6DD94 /* PwCiOSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		50023B231F626FC500016721 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		50023B261F627F9000016721 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		502697141F6621F000363FC7 /* PwCTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PwCTheme.swift; sourceTree = "<group>"; };
 		507BEE171F5E8AD700C6DD94 /* PwCiOSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PwCiOSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		507BEE1A1F5E8AD700C6DD94 /* PwCiOSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PwCiOSKit.h; sourceTree = "<group>"; };
 		507BEE1B1F5E8AD700C6DD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				50023B251F626FCF00016721 /* Extensions */,
 				507BEE1A1F5E8AD700C6DD94 /* PwCiOSKit.h */,
 				507BEE311F5E8B9700C6DD94 /* PwCUtilities.swift */,
+				502697141F6621F000363FC7 /* PwCTheme.swift */,
 				507BEE1B1F5E8AD700C6DD94 /* Info.plist */,
 			);
 			path = PwCiOSKit;
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50023B241F626FC500016721 /* DictionaryExtension.swift in Sources */,
+				502697151F6621F000363FC7 /* PwCTheme.swift in Sources */,
 				507BEE321F5E8B9700C6DD94 /* PwCUtilities.swift in Sources */,
 				50023B271F627F9000016721 /* StringExtension.swift in Sources */,
 			);
