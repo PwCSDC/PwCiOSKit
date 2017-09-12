@@ -90,6 +90,34 @@ extension String {
             return formatter.string(from: NSNumber(value: value))!
         }
     }
+    /**
+     Calculate the height for special Font
+     
+     @param width: width for UILabel/UItextfield/UITextview, etc.
+     
+     @param font: special UIFont
+     
+     @return  height
+     */
+    public func heightWithConstrainedWidth(width: CGFloat, font: UIFont) -> Float {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        return Float(boundingBox.height)
+    }
+    /**
+     Calculate the width for special Font
+     
+     @param height: height for UILabel/UItextfield/UITextview, etc.
+     
+     @param font: special UIFont
+     
+     @return  width
+     */
+   public func widthWithConstraintedHeight(height: CGFloat, font: UIFont) -> Float {
+        let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        return Float(boundingBox.width)
+    }
 
 }
 
