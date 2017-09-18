@@ -14,6 +14,7 @@
 		507BEE261F5E8AD700C6DD94 /* PwCiOSKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507BEE251F5E8AD700C6DD94 /* PwCiOSKitTests.swift */; };
 		507BEE281F5E8AD700C6DD94 /* PwCiOSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 507BEE1A1F5E8AD700C6DD94 /* PwCiOSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		507BEE321F5E8B9700C6DD94 /* PwCUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507BEE311F5E8B9700C6DD94 /* PwCUtilities.swift */; };
+		5B032F271F6F7425004F0043 /* DeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B032F261F6F7425004F0043 /* DeviceExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		507BEE251F5E8AD700C6DD94 /* PwCiOSKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PwCiOSKitTests.swift; sourceTree = "<group>"; };
 		507BEE271F5E8AD700C6DD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		507BEE311F5E8B9700C6DD94 /* PwCUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PwCUtilities.swift; sourceTree = "<group>"; };
+		5B032F261F6F7425004F0043 /* DeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				50023B231F626FC500016721 /* DictionaryExtension.swift */,
 				50023B261F627F9000016721 /* StringExtension.swift */,
+				5B032F261F6F7425004F0043 /* DeviceExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				502697151F6621F000363FC7 /* PwCTheme.swift in Sources */,
 				507BEE321F5E8B9700C6DD94 /* PwCUtilities.swift in Sources */,
 				50023B271F627F9000016721 /* StringExtension.swift in Sources */,
+				5B032F271F6F7425004F0043 /* DeviceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
